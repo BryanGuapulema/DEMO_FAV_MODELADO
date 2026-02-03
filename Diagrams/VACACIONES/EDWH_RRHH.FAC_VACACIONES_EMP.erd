@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<diagram version="1" name="FAC_VACACIONES_EMP.erd">
+<diagram version="1" name="EDWH_RRHH.FAC_VACACIONES_EMP.erd">
 	<entities>
-		<data-source id="google_bigquery_jdbc_simba-19c1c2114dd-70269e9947ce5d88">
+		<data-source id="google_bigquery_jdbc_simba-19c23e79a8d-28550e2347f033dc">
 			<entity id="1" name="FAC_VACACIONES_EMP" fq-name="`lafavorita-182519`.EDWH_RRHH.FAC_VACACIONES_EMP" order="0" color-bg="255,255,128" x="320" y="3000">
 				<path name="EDWH_RRHH"/>
 				<path name="lafavorita-182519"/>
