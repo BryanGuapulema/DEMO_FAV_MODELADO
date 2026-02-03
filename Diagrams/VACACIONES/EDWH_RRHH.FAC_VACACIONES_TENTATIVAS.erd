@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="EDWH_RRHH.FAC_VACACIONES_TENTATIVAS.erd">
+	<entities>
+		<data-source id="google_bigquery_jdbc_simba-19c23e79a8d-28550e2347f033dc">
+			<entity id="1" name="DIM_FECHA" fq-name="`lafavorita-182519`.EDWH.DIM_FECHA" order="0" x="460" y="40">
+				<path name="EDWH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="2" name="DIM_ZONA" fq-name="`lafavorita-182519`.EDWH.DIM_ZONA" order="1" x="460" y="860">
+				<path name="EDWH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="3" name="DIM_EMPLEADO_RH" fq-name="`lafavorita-182519`.EDWH_RRHH.DIM_EMPLEADO_RH" order="2" color-bg="204,192,184" x="460" y="1060">
+				<path name="EDWH_RRHH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="4" name="FAC_VACACIONES_TENTATIVAS" fq-name="`lafavorita-182519`.EDWH_RRHH.FAC_VACACIONES_TENTATIVAS" order="3" color-bg="255,255,128" x="40" y="260">
+				<path name="EDWH_RRHH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="vfk_FAC_VACACIONES_TENTATIVAS_DIM_FECHA" type="vfk" pk-ref="1" fk-ref="4"/>
+		<relation name="vfk_FAC_VACACIONES_TENTATIVAS_DIM_FECHA" type="vfk" pk-ref="1" fk-ref="4"/>
+		<relation name="vfk_FAC_VACACIONES_TENTATIVAS_DIM_FECHA" type="vfk" pk-ref="1" fk-ref="4"/>
+		<relation name="vfk_FAC_VACACIONES_TENTATIVAS_DIM_FECHA" type="vfk" pk-ref="1" fk-ref="4"/>
+		<relation name="vfk_FAC_VACACIONES_TENTATIVAS_DIM_ZONA" type="vfk" pk-ref="2" fk-ref="4"/>
+		<relation name="vfk_FAC_VACACIONES_TENTATIVAS_DIM_EMPLEADO_RH" type="vfk" pk-ref="3" fk-ref="4"/>
+	</relations>
+</diagram>

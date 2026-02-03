@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="FAC_VACACIONES_EMP.erd">
+	<entities>
+		<data-source id="google_bigquery_jdbc_simba-19c1c2114dd-70269e9947ce5d88">
+			<entity id="1" name="FAC_VACACIONES_EMP" fq-name="`lafavorita-182519`.EDWH_RRHH.FAC_VACACIONES_EMP" order="0" color-bg="255,255,128" x="320" y="3000">
+				<path name="EDWH_RRHH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="2" name="DIM_FECHA" fq-name="`lafavorita-182519`.EDWH.DIM_FECHA" order="1" color-bg="204,192,184" x="720" y="40">
+				<path name="EDWH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="3" name="DIM_ZONA" fq-name="`lafavorita-182519`.EDWH.DIM_ZONA" order="2" color-bg="204,192,184" x="40" y="3100">
+				<path name="EDWH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="4" name="DIM_EMPLEADO_RH" fq-name="`lafavorita-182519`.EDWH_RRHH.DIM_EMPLEADO_RH" order="3" x="720" y="860">
+				<path name="EDWH_RRHH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="5" name="DIM_LUGAR_TRABAJO" fq-name="`lafavorita-182519`.EDWH_RRHH.DIM_LUGAR_TRABAJO" order="4" x="720" y="4360">
+				<path name="EDWH_RRHH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="6" name="DIM_FORMA_LIQ" fq-name="`lafavorita-182519`.EDWH_RRHH.DIM_FORMA_LIQ" order="5" x="720" y="4960">
+				<path name="EDWH_RRHH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="vfk_DIM_ZONA_FAC_VACACIONES_EMP" type="vfk" pk-ref="1" fk-ref="3"/>
+		<relation name="vfk_FAC_VACACIONES_EMP_DIM_FECHA" type="vfk" pk-ref="2" fk-ref="1"/>
+		<relation name="vfk_FAC_VACACIONES_EMP_DIM_EMPLEADO_RH" type="vfk" pk-ref="4" fk-ref="1"/>
+		<relation name="vfk_FAC_VACACIONES_EMP_DIM_LUGAR_TRABAJO" type="vfk" pk-ref="5" fk-ref="1"/>
+		<relation name="vfk_FAC_VACACIONES_EMP_DIM_FORMA_LIQ" type="vfk" pk-ref="6" fk-ref="1"/>
+	</relations>
+</diagram>

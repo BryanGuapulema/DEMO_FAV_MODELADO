@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="EDWH_RRHH.FAC_VACACIONES_TOMADAS_RESUMEN.erd">
+	<entities>
+		<data-source id="google_bigquery_jdbc_simba-19c1c2114dd-70269e9947ce5d88">
+			<entity id="1" name="DIM_EMPLEADO_RH" fq-name="`lafavorita-182519`.EDWH_RRHH.DIM_EMPLEADO_RH" order="0" x="520" y="40">
+				<path name="EDWH_RRHH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="2" name="FAC_VACACIONES_TOMADAS_RESUMEN" fq-name="`lafavorita-182519`.EDWH_RRHH.FAC_VACACIONES_TOMADAS_RESUMEN" order="1" color-bg="255,255,128" x="40" y="2480">
+				<path name="EDWH_RRHH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="3" name="DIM_ZONA" fq-name="`lafavorita-182519`.EDWH.DIM_ZONA" order="2" color-bg="204,192,184" x="520" y="3540">
+				<path name="EDWH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="vfk_FAC_VACACIONES_TOMADAS_RESUMEN_DIM_EMPLEADO_RH" type="vfk" pk-ref="1" fk-ref="2"/>
+		<relation name="vfk_FAC_VACACIONES_TOMADAS_RESUMEN_DIM_ZONA" type="vfk" pk-ref="3" fk-ref="2"/>
+	</relations>
+</diagram>

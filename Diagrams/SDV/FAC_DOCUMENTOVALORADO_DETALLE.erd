@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="FAC_DOCUMENTOVALORADO_DETALLEerd.erd">
+	<entities>
+		<data-source id="google_bigquery_jdbc_simba-19c1c2114dd-70269e9947ce5d88">
+			<entity id="1" name="DIM_FECHA" fq-name="`lafavorita-182519`.EDWH.DIM_FECHA" showAttrs="ALL" order="0" x="40" y="1220">
+				<path name="EDWH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="2" name="FAC_DOCUMENTOVALORADO_RESUMEN" fq-name="`lafavorita-182519`.EDWH.FAC_DOCUMENTOVALORADO_RESUMEN" order="1" x="260" y="1400">
+				<path name="EDWH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="3" name="DIM_UNIDAD_OP_SMAX" fq-name="`lafavorita-182519`.EDWH.DIM_UNIDAD_OP_SMAX" order="2" x="580" y="40">
+				<path name="EDWH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="4" name="DIM_PEDIDO_DOCVAL" fq-name="`lafavorita-182519`.EDWH.DIM_PEDIDO_DOCVAL" order="3" x="580" y="1220">
+				<path name="EDWH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="5" name="DIM_DOCUMENTOVALORADO" fq-name="`lafavorita-182519`.EDWH.DIM_DOCUMENTOVALORADO" order="4" x="580" y="1600">
+				<path name="EDWH"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+			<entity id="6" name="DIM_CLIENTE_CRM" fq-name="`lafavorita-182519`.EDWH_CRM.DIM_CLIENTE_CRM" order="5" color-bg="204,192,184" x="580" y="1940">
+				<path name="EDWH_CRM"/>
+				<path name="lafavorita-182519"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="vfk_DIM_FECHA_FAC_DOCUMENTOVALORADO_RESUMEN" type="vfk" pk-ref="2" fk-ref="1"/>
+		<relation name="vfk_FAC_DOCUMENTOVALORADO_RESUMEN_DIM_UNIDAD_OP_SMAX" type="vfk" pk-ref="3" fk-ref="2"/>
+		<relation name="vfk_FAC_DOCUMENTOVALORADO_RESUMEN_DIM_PEDIDO_DOCVAL" type="vfk" pk-ref="4" fk-ref="2"/>
+		<relation name="vfk_FAC_DOCUMENTOVALORADO_RESUMEN_DIM_DOCUMENTOVALORADO" type="vfk" pk-ref="5" fk-ref="2"/>
+		<relation name="vfk_FAC_DOCUMENTOVALORADO_RESUMEN_DIM_CLIENTE_CRM" type="vfk" pk-ref="6" fk-ref="2"/>
+	</relations>
+</diagram>
