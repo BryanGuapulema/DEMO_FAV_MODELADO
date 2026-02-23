@@ -33,7 +33,7 @@
 		</data-source>
 	</entities>
 	<relations>
-		<relation name="vfk_DIM_FECHA_FAC_DOCUMENTOVALORADO_DETALLE" type="vfk" pk-ref="1" fk-ref="7"/>
+		<relation name="vfk_FAC_DOCUMENTOVALORADO_DETALLE_DIM_FECHA" type="vfk" pk-ref="1" fk-ref="7"/>
 		<relation name="vfk_FAC_DOCUMENTOVALORADO_DETALLE_DIM_UNIDAD_OP_SMAX" type="vfk" pk-ref="2" fk-ref="7"/>
 		<relation name="vfk_FAC_DOCUMENTOVALORADO_DETALLE_DIM_PEDIDO_DOCVAL" type="vfk" pk-ref="3" fk-ref="7"/>
 		<relation name="vfk_FAC_DOCUMENTOVALORADO_DETALLE_DIM_DOCUMENTOVALORADO" type="vfk" pk-ref="4" fk-ref="7"/>
