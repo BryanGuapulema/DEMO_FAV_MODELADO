@@ -22,5 +22,7 @@
 	</entities>
 	<relations>
 		<relation name="vfk_FAC_VACACIONES_TOMADAS_DIM_ZONA" type="vfk" pk-ref="1" fk-ref="2"/>
+		<relation name="vfk_FAC_VACACIONES_TOMADAS_DIM_EMPLEADO_RH" type="vfk" pk-ref="3" fk-ref="2"/>
+		<relation name="vfk_FAC_VACACIONES_TOMADAS_DIM_FECHA" type="vfk" pk-ref="4" fk-ref="2"/>
 	</relations>
 </diagram>

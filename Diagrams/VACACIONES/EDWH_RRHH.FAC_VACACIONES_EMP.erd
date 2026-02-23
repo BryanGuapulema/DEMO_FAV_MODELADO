@@ -29,8 +29,8 @@
 		</data-source>
 	</entities>
 	<relations>
-		<relation name="vfk_DIM_ZONA_FAC_VACACIONES_EMP" type="vfk" pk-ref="1" fk-ref="3"/>
 		<relation name="vfk_FAC_VACACIONES_EMP_DIM_FECHA" type="vfk" pk-ref="2" fk-ref="1"/>
+		<relation name="vfk_FAC_VACACIONES_EMP_DIM_ZONA" type="vfk" pk-ref="3" fk-ref="1"/>
 		<relation name="vfk_FAC_VACACIONES_EMP_DIM_EMPLEADO_RH" type="vfk" pk-ref="4" fk-ref="1"/>
 		<relation name="vfk_FAC_VACACIONES_EMP_DIM_LUGAR_TRABAJO" type="vfk" pk-ref="5" fk-ref="1"/>
 		<relation name="vfk_FAC_VACACIONES_EMP_DIM_FORMA_LIQ" type="vfk" pk-ref="6" fk-ref="1"/>

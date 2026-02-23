@@ -18,6 +18,6 @@
 	</entities>
 	<relations>
 		<relation name="vfk_FAC_VACACIONES_TOMADAS_RESUMEN_DIM_EMPLEADO_RH" type="vfk" pk-ref="1" fk-ref="2"/>
-		<relation name="vfk_DIM_ZONA_FAC_VACACIONES_TOMADAS_RESUMEN" type="vfk" pk-ref="2" fk-ref="3"/>
+		<relation name="vfk_FAC_VACACIONES_TOMADAS_RESUMEN_DIM_ZONA" type="vfk" pk-ref="3" fk-ref="2"/>
 	</relations>
 </diagram>
